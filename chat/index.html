@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DeepSeek 聊天室</title>
+        <script src="index.js?v=4"></script>
+        <link rel="stylesheet" type="text/css" href="./css/index.css?v=2" />
+    </head>
+    <body onload="init()">
+        <div id="main-box">
+            <div id="message-box"></div>
+            <div id="input-box">
+                <button class="reasoning-button" onclick="switchReasoing(event)">推理</button>
+                <textarea id="user-input" placeholder="请输入消息" onkeypress="sendMsg(event)"></textarea>
+            </div>
+        </div>
+    </body>
+</html>
