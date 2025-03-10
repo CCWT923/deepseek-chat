@@ -1,11 +1,16 @@
+require('dotenv').config();
+
 const OpenAI = require('openai');
 const WebSocket = require('ws');
 let reasoingSwitch = false;
 
+const api_key = process.env.API_KEY;
+console.log(api_key);
 const client = new OpenAI({
     baseURL:'https://api.deepseek.com/v1',
-    apiKey: 'sk-6b38b2497e6f48ad9733c652797d8c3f',
+    apiKey: api_key,
 });
+
 
 const port = 30001;
 /**
